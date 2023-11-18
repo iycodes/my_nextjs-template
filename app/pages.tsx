@@ -1,0 +1,15 @@
+import localFont from "next/font/local";
+import "./global.scss";
+
+const spaceGroteskFont = localFont({ src: "./" });
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
+}
